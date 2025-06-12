@@ -11,7 +11,7 @@ if not collection_name:
     raise ValueError("Missing CHROMA_COLLECTION_NAME in .env file")
 
 # Initialize ChromaDB client and collection
-chroma_client = chromadb.PersistentClient(path="./chrome_db")
+chroma_client = chromadb.EphemeralClient()
 collection = chroma_client.get_or_create_collection(name=collection_name)
 
 def ingest_document(docs):
