@@ -1,6 +1,6 @@
 streamlit 
 openai
-chromadb
+chromadb==0.4.14
 tiktoken
 markitdown[all] 
 google-generativeai
