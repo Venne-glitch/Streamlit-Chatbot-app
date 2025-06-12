@@ -3,3 +3,4 @@ openai
 chromadb
 tiktoken
 markitdown[all] 
+google-generativeai
